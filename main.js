@@ -78,12 +78,9 @@ const petAdopter = (petsArray) => {
     printToDom(domString, 'pet-zone')
 };
 
-//   petAdopter(pets);
-
-  
-
 const buttonClick = (e) => {
     const typeOfPet = e.target.id;
+    console.log(typeOfPet)
     const selectedPet = [];
     for (let i = 0; i < pets.length; i++) {
         const pet = pets[i];
@@ -97,6 +94,7 @@ const buttonClick = (e) => {
         petAdopter(pets);
         
     } else {
+        console.log(selectedPet)
         petAdopter(selectedPet)
     };
 };
@@ -105,7 +103,7 @@ const buttonClick = (e) => {
     
 petAdopter(pets);
    
-document.getElementById('dogs').addEventListener('click', buttonClick);
-document.getElementById('cats').addEventListener('click', buttonClick);
-document.getElementById('chickens').addEventListener('click', buttonClick);
+document.getElementById('dog').addEventListener('click', buttonClick);
+document.getElementById('cat').addEventListener('click', buttonClick);
+document.getElementById('chicken').addEventListener('click', buttonClick);
 document.getElementById('all').addEventListener('click', buttonClick);
