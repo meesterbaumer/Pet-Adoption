@@ -9,49 +9,49 @@ const pets = [
     name: 'Redd',
     color: 'red and white',
     specialSkill: 'Looking Regal',
-    typeOfPet: 'dog',
+    typeOfPet: 'Dog',
     },
     {
     image: './images/Oliver.jpeg',
     name: 'Oliver',
     color: 'Black',
     specialSkill: 'Meowwwing',
-    typeOfPet: 'cat',
+    typeOfPet: 'Cat',
     },
     {
     image: './images/Rusty.jpeg',
     name: 'Rusty',
     color: 'Red',
     specialSkill: 'Laying Eggs',
-    typeOfPet: 'chicken',
+    typeOfPet: 'Chicken',
     },
     {
     image: './images/Maddie.jpeg',
     name: 'Maddie',
     color: 'Black and Tan',
     specialSkill: 'Cuddling',
-    typeOfPet: 'cat',
+    typeOfPet: 'Cat',
     },
     {
     image: './images/penny.jpeg',
     name: 'Penny',
     color: 'Black and White',
     specialSkill: 'Laying Eggs',
-    typeOfPet: 'chicken',
+    typeOfPet: 'Chicken',
     },
     {
     image: './images/Fern.jpeg',
     name: 'Fern',
     color: 'Black and White',
     specialSkill: 'Being Needy',
-    typeOfPet: 'dog',
+    typeOfPet: 'Dog',
     },
     {
     image: './images/Rocky.jpeg',
     name: 'Rocky',
     color: 'Grey',
     specialSkill: 'Pooping while Standing',
-    typeOfPet: 'cat',
+    typeOfPet: 'Cat',
     },
 ];
 
@@ -67,8 +67,8 @@ const petAdopter = (petsArray) => {
         <div class="card ${pets.typeOfPet}">
             <h2>${pets.name}</h2>
             <img src=${pets.image} alt='Image of ${pets.name}' />
-            <p>${pets.color}</p>
-            <p>${pets.specialSkill}</p>
+            <p>color: ${pets.color}</p>
+            <p>Special power: ${pets.specialSkill}</p>
             <footer>${pets.typeOfPet}</footer>
 
         </div>
@@ -103,7 +103,7 @@ const buttonClick = (e) => {
     
 petAdopter(pets);
    
-document.getElementById('dog').addEventListener('click', buttonClick);
-document.getElementById('cat').addEventListener('click', buttonClick);
-document.getElementById('chicken').addEventListener('click', buttonClick);
+document.getElementById('Dog').addEventListener('click', buttonClick);
+document.getElementById('Cat').addEventListener('click', buttonClick);
+document.getElementById('Chicken').addEventListener('click', buttonClick);
 document.getElementById('all').addEventListener('click', buttonClick);
